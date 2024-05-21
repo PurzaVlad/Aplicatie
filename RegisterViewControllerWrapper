@@ -1,0 +1,9 @@
+import SwiftUI
+import UIKit
+
+struct RegisterViewControllerWrapper {
+    static func registerUser(username: String, email: String, password: String, completion: @escaping (Bool, String?) -> Void) {
+        let registerVC = RegisterViewController()
+        registerVC.registerUser(username: username, email: email, password: password, completion: completion)
+    }
+}
